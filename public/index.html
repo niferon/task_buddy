@@ -3,9 +3,51 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- favicon -->
+		<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+		<!-- styles -->
 		<link href="/public/output.css" rel="stylesheet" />
+		<!-- fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Ysabeau+SC&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Task Buddy</title>
 	</head>
-	<body>
-		<h1 class="text-4xl underline">Hello world!</h1>
+	<body class="h-screen bg-neutral-100 font-Ysabeau+SC">
+		<main
+			class="w-10/12 min-h-[40%] my-10 p-4 mx-auto rounded-2xl bg-white drop-shadow-2xl"
+		>
+			<section class="">
+				<form id="task-form">
+					<h4 class="text-center text-4xl">Task Buddy</h4>
+					<h6 class="text-center">~yourdaylyhelper~</h6>
+					<div class="w-full">
+						<input
+							type="text"
+							name="name"
+							id="task-input"
+							class="w-full my-5 p-3 rounded-2xl text-2xl bg-slate-50 placeholder:italic focus:outline-slate-500 placeholder:focus:text-transparent"
+							placeholder="...wash dishes?"
+						/>
+						<button
+							type="submit"
+							class="m-2 px-4 text-2xl bg-purple-300 rounded-full hover:bg-purple-400 hover:drop-shadow-md"
+						>
+							submit
+						</button>
+					</div>
+					<div id="form-alert"></div>
+				</form>
+			</section>
+			<section class="">
+				<p id="loading-text">Loading...</p>
+				<div id="tasks"></div>
+			</section>
+		</main>
+
+		<script src="./browser_app.js"></script>
 	</body>
 </html>
