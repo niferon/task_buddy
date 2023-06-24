@@ -1,13 +1,13 @@
 {
-	"name": "task_manager",
+	"name": "task_buddy",
 	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
+	"description": "your personal daily helper",
+	"main": "app.js",
 	"scripts": {
-		"build": "tailwindcss -i ./src/frontend/input.css -o ./public/output.css --watch"
+		"build": "tailwindcss -i ./views/input.css -o ./views/output.css --watch"
 	},
 	"keywords": [],
-	"author": "",
+	"author": "https://github.com/niferon",
 	"license": "ISC",
 	"devDependencies": {
 		"nodemon": "^2.0.22",
